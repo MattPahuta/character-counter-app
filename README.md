@@ -2,20 +2,23 @@
 
 This is a solution to the [Character counter challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/character-counter-znSgeWs_i6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+![project screenshot]()
+
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Features](#features)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
+  - [Tech Stack](#tech-stack)
+  - [Project Structure](#project-structure)
+- [Architecture & Key Decisions](#architecture--key-decisions)
+  - [Component Design](#component-design)
+  - [State Management](#state-management)
+  - [Utility Functions](#utility-functions)
+  - [Theme System](#theme-system)
+  - [Accessibility](#accessibility)
+- [Data Flow](#data-flow)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
