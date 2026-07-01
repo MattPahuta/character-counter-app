@@ -1,4 +1,4 @@
-# Frontend Mentor - Character counter solution
+# Character Counter app
 
 This is a solution to the [Character counter challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/character-counter-znSgeWs_i6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 

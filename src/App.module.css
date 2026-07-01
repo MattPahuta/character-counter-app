@@ -1,0 +1,6 @@
+.main {
+  margin: 0 auto;
+  max-width: var(--layout-app-max-width);
+  min-height: 100svh;
+  padding-inline: var(--spacing-100);
+}
