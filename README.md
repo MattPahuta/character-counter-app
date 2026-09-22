@@ -57,27 +57,38 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
+## Architecture & Key Decisions
 
-### What I learned
+This relatively simple web app was a strong option to practice core React development, such as dealing with state, derived data, controlled inputs, component composition, conditional rendering, accessibility, and reusable logic.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+**High Level Concepts**
+- Components handle the UI
+- Utility functions handle the text analysis
+- State lives at the level where it is needed
 
-### Continued development
+Keep derived data out of state whenever possible - Core React concept
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### Component Design
 
+### State Management
+
+***High level state overview**
+text
+├── character count
+├── word count
+├── sentence count
+├── reading time
+└── letter density
+
+includeSpaces
+characterLimit
+theme
+
+### Utility Functions
+
+### Theme System
+
+### Accessibility
 
 ### Useful resources
 
