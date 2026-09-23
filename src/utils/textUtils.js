@@ -14,3 +14,15 @@ export function countWords(text) {
 
   return trimmedText.split(/\s+/).length;
 }
+
+export function countSentences(text) {
+  const trimmedText = text.trim();
+
+  if (!trimmedText) {
+    return 0;
+  }
+
+  const sentences = trimmedText.match(/[.!?]+(?=\s|$)/g);
+
+  return sentences ? sentences.length : 0;
+}
