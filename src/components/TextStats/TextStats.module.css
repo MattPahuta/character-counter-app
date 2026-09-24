@@ -10,6 +10,7 @@
 .statBox {
   padding: var(--spacing-250);
   border-radius: var(--radius-12);
+  background-color: var(--color-purple-400);
 
   @media (min-width: 600px) {
     padding-block: var(--spacing-200);
