@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-
+import "./styles/global.css";
+import Header from "./components/Header/Header";
 import TextInput from "./components/TextInput/TextInput";
 import TextStats from "./components/TextStats/TextStats";
 
@@ -21,19 +22,21 @@ function App() {
   const wordCount = countWords(text);
   const sentenceCount = countSentences(text);
 
-
   return (
-    <div className={styles.main}>
-      <h1 className={styles.title}>
-        Analyze your text in real-time.
-      </h1>
-      <TextInput value={text} onChange={handleTextChange} />
-      <TextStats
-        characterCount={characterCount}
-        wordCount={wordCount}
-        sentenceCount={sentenceCount}
-      />
-    </div>
+    <>
+      <Header />
+      <main className={`${styles.main} wrapper`}>
+        <h1 className={styles.title}>
+          Analyze your text in real-time.
+        </h1>
+        <TextInput value={text} onChange={handleTextChange} />
+        <TextStats
+          characterCount={characterCount}
+          wordCount={wordCount}
+          sentenceCount={sentenceCount}
+        />
+      </main>
+    </>
   );
 }
 

@@ -3,7 +3,7 @@ import styles from "./TextInput.module.css";
 function TextInput({ value, onChange }) {
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.inputWrapper}>
       <label htmlFor="text-input">Enter your text</label>
 
       <textarea
