@@ -1,6 +1,6 @@
 import styles from "./TextStats.module.css";
 
-function TextStats( { characterCount, wordCount, sentenceCount }) {
+function TextStats( { characterCount, wordCount, sentenceCount, characterLimit, limitExceeded }) {
   return (
     <section className={styles.statsWrapper}>
       <div className={styles.statBox}>

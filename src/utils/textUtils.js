@@ -1,5 +1,5 @@
-export function countCharacters(text, includeSpaces = true) {
-  if (includeSpaces) {
+export function countCharacters(text, excludeSpaces = false) {
+  if (!excludeSpaces) {
     return text.length;
   }
 
