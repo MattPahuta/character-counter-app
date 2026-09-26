@@ -1,0 +1,12 @@
+/* orange-800 for light mode, orange-500 for dark mode  */
+
+.warningWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-orange-800)
+}
+
+.warningMessage {
+  margin-inline-start: 0.5rem;
+}

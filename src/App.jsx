@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import TextInput from "./components/TextInput/TextInput";
 import CharacterOptions from "./components/CharacterOptions/CharacterOptions";
 import TextStats from "./components/TextStats/TextStats";
+import LimitWarning from "./components/LimitWarning/LimitWarning";
 
 import {
   countCharacters,
@@ -62,6 +63,9 @@ function App() {
           Analyze your text in real-time.
         </h1>
         <TextInput value={text} onChange={handleTextChange} />
+        {limitExceeded && (
+          <LimitWarning characterLimit={characterLimit} charactersOverLimit={charactersOverLimit} />
+        )}
         <CharacterOptions
           excludeSpaces={excludeSpaces}
           onExcludeSpacesChange={handleExcludeSpacesChange}

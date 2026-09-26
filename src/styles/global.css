@@ -184,10 +184,7 @@
     padding-inline: var(--spacing-100);
   }
 
-  .wrapper {
-    margin: 0 auto;
-    max-width: var(--layout-app-max-width);
-  }
+ 
 
   h1,
   h2,
