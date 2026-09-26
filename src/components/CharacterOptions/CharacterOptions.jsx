@@ -33,7 +33,9 @@ function CharacterOptions({
             id="charLimitInput"
             className={styles.limitInput}
             aria-label="Character limit"
-            type="number"
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
             min="1"
             value={characterLimit}
             onChange={onCharacterLimitChange}

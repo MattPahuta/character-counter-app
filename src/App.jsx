@@ -32,13 +32,22 @@ function App() {
     characterLimit !== "" &&
     characterCount > Number(characterLimit);
 
+  const charactersOverLimit = limitExceeded
+    ? characterCount - Number(characterLimit)
+    : 0;
+
   // handlers
   function handleExcludeSpacesChange(event) {
     setExcludeSpaces(event.target.checked);
   }
 
   function handleCharacterLimitToggle(event) {
-    setHasCharacterLimit(event.target.checked);
+    const enabled = event.target.checked;
+    setHasCharacterLimit(enabled);
+
+    if (!enabled) {
+      setCharacterLimit("");
+    }
   }
 
   function handleCharacterLimitChange(event) {
@@ -65,8 +74,6 @@ function App() {
           characterCount={characterCount}
           wordCount={wordCount}
           sentenceCount={sentenceCount}
-          characterLimit={characterLimit}
-          limitExceeded={limitExceeded}
         />
       </main>
     </>
