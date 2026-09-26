@@ -86,10 +86,12 @@
     /* purples */
     --color-purple-500: hsl(274, 90%, 73%);
     --color-purple-400: hsl(274, 90%, 80%);
+    --color-purple-box-shadow: rgb(210, 158, 250);
     /* yellow     */
     --color-yellow-500: hsl(37, 100%, 50%);
     /* oranges */
     --color-orange-800: hsl(15, 99%, 43%);
+    --color-orange-box-shadow: rgb(218, 55, 1);
     --color-orange-500: hsl(15, 99%, 67%);
 
     /* ─── Typography ────────────────────────────────────────────

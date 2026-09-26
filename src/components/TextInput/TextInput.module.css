@@ -1,5 +1,5 @@
 .inputWrapper {
-  margin-block-end: var(--spacing-500);
+  margin-block-end: var(--spacing-200);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-100);
@@ -9,6 +9,7 @@
   width: 100%;
   min-height: 200px;
   field-sizing: content;
+  resize: vertical;
   padding: 1rem;
   border: 1px solid var(--color-neutral-200);
   background-color: var(--color-neutral-100);
@@ -17,7 +18,22 @@
   line-height: 1.5;
 }
 
+.textarea:hover {
+  cursor: pointer;
+}
+
 .textarea:focus-visible {
+  outline: none;
+  border-color: var(--color-purple-500);
+  box-shadow: 0 0 0.625rem rgba(210, 158, 250, 0.8);
+}
+
+/* .textarea:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
+} */
+
+.error {
+  border-color: var(--color-orange-800);
+  box-shadow: 0 0 0.5rem rgba(218, 55, 1, 0.8);
 }

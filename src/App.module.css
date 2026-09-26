@@ -3,7 +3,8 @@
   max-width: var(--layout-app-max-width);
 } */
 .main {
-  
+  max-width: var(--layout-app-max-width);
+  margin: 0 auto;
 }
 
 .title {

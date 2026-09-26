@@ -62,7 +62,7 @@ function App() {
         <h1 className={styles.title}>
           Analyze your text in real-time.
         </h1>
-        <TextInput value={text} onChange={handleTextChange} />
+        <TextInput value={text} onChange={handleTextChange} hasError={limitExceeded} />
         {limitExceeded && (
           <LimitWarning characterLimit={characterLimit} charactersOverLimit={charactersOverLimit} />
         )}

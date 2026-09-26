@@ -1,6 +1,6 @@
 import styles from "./TextInput.module.css";
 
-function TextInput({ value, onChange }) {
+function TextInput({ value, onChange, hasError }) {
 
   return (
     <div className={styles.inputWrapper}>
@@ -8,7 +8,7 @@ function TextInput({ value, onChange }) {
 
       <textarea
         id="text-input"
-        className={styles.textarea}
+        className={`${styles.textarea} ${hasError ? styles.error : ""}`}
         value={value}
         onChange={onChange}
         placeholder="Start typing here… (or paste your text)"></textarea>
