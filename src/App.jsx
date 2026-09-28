@@ -11,6 +11,7 @@ import {
   countCharacters,
   countWords,
   countSentences,
+  calculateReadingTime,
 } from "./utils/textUtils";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   const characterCount = countCharacters(text, excludeSpaces);
   const wordCount = countWords(text);
   const sentenceCount = countSentences(text);
+  const readingTime = calculateReadingTime(text);
   const limitExceeded =
     hasCharacterLimit &&
     characterLimit !== "" &&
@@ -62,9 +64,16 @@ function App() {
         <h1 className={styles.title}>
           Analyze your text in real-time.
         </h1>
-        <TextInput value={text} onChange={handleTextChange} hasError={limitExceeded} />
+        <TextInput
+          value={text}
+          onChange={handleTextChange}
+          hasError={limitExceeded}
+        />
         {limitExceeded && (
-          <LimitWarning characterLimit={characterLimit} charactersOverLimit={charactersOverLimit} />
+          <LimitWarning
+            characterLimit={characterLimit}
+            charactersOverLimit={charactersOverLimit}
+          />
         )}
         <CharacterOptions
           excludeSpaces={excludeSpaces}
@@ -73,6 +82,7 @@ function App() {
           onCharacterLimitToggle={handleCharacterLimitToggle}
           characterLimit={characterLimit}
           onCharacterLimitChange={handleCharacterLimitChange}
+          readingTime={readingTime}
         />
         <TextStats
           characterCount={characterCount}
