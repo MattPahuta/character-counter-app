@@ -1,6 +1,7 @@
 .optionsWrapper{
   /* temp padding */
-  padding-block: 2rem; 
+  /* padding-block: 2rem;  */
+  margin-block-end: var(--spacing-500);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-150);
@@ -13,16 +14,22 @@
 }
 
 .inputGroup {
+  min-height: 30px;
   display: flex;
   align-items: center;
   gap: var(--spacing-100);
 }
 
+input:checked {
+  background-color: red;
+}
+
 .limitInput {
-  /* temp max-width */
-  max-width: 100px;
+  width: 55px;
   padding: 4px 12px;
   border-radius: var(--radius-6);
-  border: 1px solid var(--color-neutral-900);
+  /* border: 1px solid var(--color-neutral-600); */
+  border: none;
+  outline: 1px solid var(--color-neutral-600);
   
 }
