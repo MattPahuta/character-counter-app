@@ -43,3 +43,39 @@ export function calculateReadingTime(text) {
 
   return `${Math.ceil(minutes)} ${Math.ceil(minutes) === 1 ? "minute" : "minutes"}`;
 }
+
+// counting letters only (no spaces, numbers, or punctuation)
+// normalizing each character to uppercase for consistency
+export function calculateLetterDensity(text) {
+  const letters = text.match(/[a-z]/gi) || [];
+
+  if (letters.length === 0) {
+    return [];
+  }
+
+  const frequency = {};
+
+  letters.forEach((letter) => {
+    const normalizedLetter = letter.toUpperCase();
+
+    frequency[normalizedLetter] = (frequency[normalizedLetter] || 0) + 1;
+  });
+
+  return Object.entries(frequency).map(([letter, count]) => ({
+    letter, count, percentage: (count / letter.length) * 100,
+  })).sort((a,b) => {
+    if (b.count !== a.count) {
+      return b.count - a.count;
+    }
+
+    return a.letter.localeCompare(b.letter);
+  });
+
+  /**
+   * produces data like: 
+   * [
+   *  { letter: "E", count: 40, percentage: 16.6 },
+   *  ...
+   * ]
+   */
+}
