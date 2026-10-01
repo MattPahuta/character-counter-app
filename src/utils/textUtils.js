@@ -62,7 +62,7 @@ export function calculateLetterDensity(text) {
   });
 
   return Object.entries(frequency).map(([letter, count]) => ({
-    letter, count, percentage: (count / letter.length) * 100,
+    letter, count, percentage: (count / letters.length) * 100,
   })).sort((a,b) => {
     if (b.count !== a.count) {
       return b.count - a.count;

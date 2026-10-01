@@ -5,6 +5,7 @@
 .main {
   max-width: var(--layout-app-max-width);
   margin: 0 auto;
+  padding-block-end: var(--spacing-300);
 }
 
 .title {
