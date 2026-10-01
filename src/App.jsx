@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import TextInput from "./components/TextInput/TextInput";
 import CharacterOptions from "./components/CharacterOptions/CharacterOptions";
 import TextStats from "./components/TextStats/TextStats";
+import LetterDensity from "./components/LetterDensity/LetterDensity";
 import LimitWarning from "./components/LimitWarning/LimitWarning";
 
 import {
@@ -12,6 +13,7 @@ import {
   countWords,
   countSentences,
   calculateReadingTime,
+  calculateLetterDensity,
 } from "./utils/textUtils";
 
 function App() {
@@ -30,11 +32,11 @@ function App() {
   const wordCount = countWords(text);
   const sentenceCount = countSentences(text);
   const readingTime = calculateReadingTime(text);
+  const letterDensity = calculateLetterDensity(text);
   const limitExceeded =
     hasCharacterLimit &&
     characterLimit !== "" &&
     characterCount > Number(characterLimit);
-
   const charactersOverLimit = limitExceeded
     ? characterCount - Number(characterLimit)
     : 0;
@@ -89,6 +91,7 @@ function App() {
           wordCount={wordCount}
           sentenceCount={sentenceCount}
         />
+        <LetterDensity density={letterDensity} />
       </main>
     </>
   );
