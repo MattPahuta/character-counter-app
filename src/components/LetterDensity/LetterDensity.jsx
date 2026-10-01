@@ -19,7 +19,7 @@ function LetterDensity({ density }) {
   const hasMoreCharacters = density.length > 5;
 
   return (
-    <section className="wrapper">
+    <section className={styles.wrapper}>
       <h2>Letter Density</h2>
       <ul className={styles.list}>
         {visibleDensity.map(({ letter, count, percentage }) => (
@@ -42,7 +42,7 @@ function LetterDensity({ density }) {
       {hasMoreCharacters && (
         <button
           type="button"
-          className={styles.toggle}
+          className={styles.toggleBtn}
           onClick={() => setIsExpanded((expanded) => !expanded)}
           aria-expanded={isExpanded}>
           {isExpanded ? "See less" : "See more"}

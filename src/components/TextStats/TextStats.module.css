@@ -1,4 +1,5 @@
 .statsWrapper {
+  margin-bottom: var(--spacing-300);
   display: grid;
   gap: 1rem;
 
