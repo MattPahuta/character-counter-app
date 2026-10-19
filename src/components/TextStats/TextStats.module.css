@@ -14,11 +14,17 @@
   display: flex;
   align-items: center;
   border-radius: var(--radius-12);
-  background-color: var(--color-purple-400);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right -25%;
+  background-position-x: right -50px;
+  background-size: 150px;
 
   @media (min-width: 600px) {
+    min-height: 150px;
     padding-block: var(--spacing-200);
     padding-inline: var(--spacing-150);
+    background-position-x: right -75px;
   }
 }
 
@@ -43,20 +49,19 @@
   font-size: var(--font-size-md);
   line-height: var(--line-height-med);
   letter-spacing: -0.6px;
-} 
+}
 
 .characterCount {
   background-color: var(--color-purple-400);
-  background-image: url('../../assets/images/pattern-character-count.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* background-position:; */
+  background-image: url("../../assets/images/pattern-character-count.svg");
 }
 
 .wordCount {
   background-color: var(--color-yellow-500);
+  background-image: url("../../assets/images/pattern-word-count.svg");
 }
 
 .sentenceCount {
   background-color: var(--color-orange-500);
+  background-image: url("../../assets/images/pattern-sentence-count.svg");
 }

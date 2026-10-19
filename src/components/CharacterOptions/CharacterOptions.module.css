@@ -28,8 +28,34 @@
   gap: var(--spacing-100);
 }
 
-input:checked {
-  background-color: red;
+.inputGroup input[type="checkbox"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.inputGroup input[type="checkbox"]:checked {
+  background-color: var(--color-checked);
+  border-color: var(--color-checked);
+
+  background-image: url(../../assets/images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.75rem;
+}
+
+.inputGroup input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+  border-color: var(--color-border-focus);
 }
 
 .limitInput {

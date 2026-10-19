@@ -94,6 +94,13 @@
     --color-orange-box-shadow: rgb(218, 55, 1);
     --color-orange-500: hsl(15, 99%, 67%);
 
+    --color-border: var(--color-neutral-900);
+
+    --color-checked: var(--color-purple-400);
+    --color-surface: var(--color-neutral-0);
+    --color-focus: var(--color-purple-400);
+    --color-border-focus: var(--color-neutral-100);
+
     /* ─── Typography ────────────────────────────────────────────
      */
     --font-family-base: "DM Sans", sans-serif;
