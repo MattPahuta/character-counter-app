@@ -31,7 +31,7 @@
   justify-content: center;
   align-self: start;
 
-  background-color: var(--color-neutral-100);
+  background-color: var(--color-button-bg);
   border-radius: var(--radius-6);
   transition: 220ms all ease-in-out;
 
@@ -43,5 +43,9 @@
 }
 
 .themeButton:hover {
-  background-color: var(--color-neutral-200);
+  background-color: var(--color-button-bg-hover);
+}
+
+.theme-icon {
+  opacity: 0.3;
 }

@@ -4,10 +4,10 @@ function TextInput({ value, onChange, hasError }) {
 
   return (
     <div className={styles.inputWrapper}>
-      <label htmlFor="text-input">Enter your text</label>
-
+      {/* <label htmlFor="text-input">Enter your text</label> */}
       <textarea
         id="text-input"
+        aria-label="Enter your text"
         className={`${styles.textarea} ${hasError ? styles.error : ""}`}
         value={value}
         onChange={onChange}

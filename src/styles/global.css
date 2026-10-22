@@ -91,15 +91,24 @@
     --color-yellow-500: hsl(37, 100%, 50%);
     /* oranges */
     --color-orange-800: hsl(15, 99%, 43%);
-    --color-orange-box-shadow: rgb(218, 55, 1);
+    --color-orange-shadow-800: rgba(218, 55, 1, 0.8);
     --color-orange-500: hsl(15, 99%, 67%);
+    --color-orange-shadow-500: rgba(254, 129, 88, 0.8);
 
-    --color-border: var(--color-neutral-900);
-
-    --color-checked: var(--color-purple-400);
+    /* light theme */
     --color-surface: var(--color-neutral-0);
-    --color-focus: var(--color-purple-400);
-    --color-border-focus: var(--color-neutral-100);
+    --color-text: var(--color-neutral-900);
+    --color-text-light: var(--color-neutral-700);
+    --color-border: var(--color-neutral-200);
+    --color-button-bg: var(--color-neutral-100);
+    --color-button-bg-hover: var(--color-neutral-200);
+    --color-field-bg: var(--color-neutral-100);
+    --color-option-border: var(--color-neutral-900);
+    --color-limit-outline: var(--color-neutral-600);
+    --color-accent: var(--color-purple-400);
+    --color-accent-dark: var(--color-purple-500);
+    --color-alert: var(--color-orange-800);
+    --color-alert-shadow: var(--color-orange-shadow-800);
 
     /* ─── Typography ────────────────────────────────────────────
      */
