@@ -11,17 +11,10 @@
     text-size-adjust: none;
   }
 
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  figure,
-  blockquote,
-  dl,
-  dd {
+  body {
+    min-block-size: 100vh;
     margin: 0;
+    line-height: 1.6;
   }
 
   [role="list"] {
@@ -30,14 +23,10 @@
     padding: 0;
   }
 
-  body {
-    min-block-size: 100vh;
-    line-height: 1.6;
-  }
-
   h1,
   h2,
   h3,
+  h4,
   button,
   input,
   label {
@@ -166,7 +155,7 @@
     /* ─── Layout ────────────────────────────────────────────────
      */
     --layout-app-max-width: 61.875rem; /* ~990px */
-    --layout-breakpoint-tablet: 37.5rem; 
+    --layout-breakpoint-tablet: 37.5rem;
 
     /* ─── Border ────────────────────────────────────────────────*/
 
@@ -206,8 +195,6 @@
       padding-inline: var(--spacing-400);
     }
   }
-
- 
 
   h1,
   h2,
