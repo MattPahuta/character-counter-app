@@ -20,10 +20,17 @@
     height: 2.75rem;
     border-radius: var(--radius-8);
   }
-}
 
-.themeButton:hover {
-  background-color: var(--color-button-bg-hover);
+  &:hover {
+    background-color: var(--color-button-bg-hover);
+  }
+
+  &:focus-visible {
+    outline-color: var(--color-accent);
+    outline-width: 4px;
+    outline-offset: 4px;
+    transition: none;
+  }
 }
 
 .theme-icon {

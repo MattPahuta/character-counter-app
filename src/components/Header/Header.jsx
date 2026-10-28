@@ -1,7 +1,7 @@
 import logoLight from "../../assets/images/logo-light-theme.svg";
 import logoDark from "../../assets/images/logo-dark-theme.svg";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import "../../styles/global.css";
+// import "../../styles/global.css";
 import styles from "./Header.module.css";
 
 function Header({ theme, onToggle }) {

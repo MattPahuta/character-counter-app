@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from "./App.module.css";
 import "./styles/global.css";
+import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import TextInput from "./components/TextInput/TextInput";
 import CharacterOptions from "./components/CharacterOptions/CharacterOptions";
