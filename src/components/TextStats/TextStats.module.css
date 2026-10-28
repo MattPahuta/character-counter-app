@@ -18,13 +18,17 @@
   background-position-y: center;
   background-position-x: right -25%;
   background-position-x: right -50px;
-  background-size: 150px;
+  background-size: contain;
 
   @media (min-width: 600px) {
     min-height: 150px;
     padding-block: var(--spacing-200);
     padding-inline: var(--spacing-150);
     background-position-x: right -75px;
+  }
+
+  @media (min-width: 1024px) {
+    background-position-x: right -35px;
   }
 }
 

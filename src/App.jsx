@@ -18,10 +18,23 @@ import {
 
 function App() {
   // state variables
+  const [theme, setTheme] = useState(() => {
+    return document.documentElement.dataset.theme || "light"
+  })
   const [text, setText] = useState("");
   const [excludeSpaces, setExcludeSpaces] = useState(false);
   const [hasCharacterLimit, setHasCharacterLimit] = useState(false);
   const [characterLimit, setCharacterLimit] = useState("");
+
+  // theme toggle handler
+  function handleThemeToggle() {
+    const nextTheme = theme === "light" ? "dark" : "light";
+
+    document.documentElement.dataset.theme = nextTheme;
+    localStorage.setItem("theme", nextTheme);
+
+    setTheme(nextTheme);
+  }
 
   // state change handler
   function handleTextChange(event) {
@@ -61,7 +74,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header theme={theme} onToggle={handleThemeToggle} />
       <main className={`${styles.main} wrapper`}>
         <h1 className={styles.title}>
           Analyze your text in real-time.

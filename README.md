@@ -88,6 +88,12 @@ theme
 
 ### Theme System
 
+Utilized a small, vanilla JavaScript script in the project's ```index.html``` head to reduce the risk of screen flashing on initial page load.
+
+For such a small project, I decided to integrate the theme state in ```App``` rather than use Context as I have in other projects. 
+
+Instead of ```useEffect```, I kept the interaction simple with the early initialization script and the use of a data attribute, responding to manual user interactions as well as OS preferences and saved preferances with ```localStorage```.
+
 ### Accessibility
 
 ### Useful resources
