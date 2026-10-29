@@ -13,7 +13,7 @@
 .logo {
   max-width: 185px;
 
-  @media (min-width: 600px) {
+  @media (width >= 37.5rem) {
     max-width: 100%;
   }
 }
@@ -35,7 +35,7 @@
   border-radius: var(--radius-6);
   transition: 220ms all ease-in-out;
 
-  @media (min-width: 600px) {
+  @media (width >= 37.5rem) {
     width: 2.75rem;
     height: 2.75rem;
     border-radius: var(--radius-8);

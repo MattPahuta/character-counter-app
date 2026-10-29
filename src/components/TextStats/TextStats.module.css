@@ -3,7 +3,7 @@
   display: grid;
   gap: 1rem;
 
-  @media (min-width: 600px) {
+  @media (width >= 37.5rem) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -20,14 +20,14 @@
   background-position-x: right -50px;
   background-size: contain;
 
-  @media (min-width: 600px) {
+  @media (width >= 37.5rem) {
     min-height: 150px;
     padding-block: var(--spacing-200);
     padding-inline: var(--spacing-150);
     background-position-x: right -75px;
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 64rem) {
     background-position-x: right -35px;
   }
 }
@@ -45,7 +45,7 @@
   line-height: var(--line-height-tight);
   letter-spacing: -1px;
 
-  @media (min-width: 600px) {
+  @media (width >= 37.5rem) {
     font-size: var(--font-size-display);
   }
 }

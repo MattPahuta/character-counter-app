@@ -1,7 +1,3 @@
-/* .wrapper {
-  margin: 0 auto;
-  max-width: var(--layout-app-max-width);
-} */
 .main {
   max-width: var(--layout-app-max-width);
   margin: 0 auto;
@@ -12,4 +8,14 @@
   margin-block: var(--spacing-500);
   font-size: var(--font-size-2xl);
   text-align: center;
+
+  @media (width >= 40rem) {
+    max-width: 12ch;
+    margin-inline: auto;
+    font-size: var(--font-size-display);
+  }
+
+  @media (width >= 60rem) {
+    margin-block: var(--spacing-600);
+  }
 }

@@ -33,11 +33,15 @@
     line-height: 1.1;
   }
 
+  body,
   h1,
   h2,
   h3,
-  h4 {
-    text-wrap: balance;
+  p,
+  dl,
+  dd,
+  figure {
+    margin: 0;
   }
 
   p,
@@ -212,11 +216,11 @@
     background-color: var(--color-surface);
   }
 
-  .app-wrapper {
+  .appWrapper {
     min-height: 100svh;
-    padding-inline: var(--spacing-100);
+    padding-inline: var(--spacing-200);
 
-    @media (min-width: 600px) {
+    @media (width >= 40rem) {
       padding-inline: var(--spacing-400);
     }
   }
